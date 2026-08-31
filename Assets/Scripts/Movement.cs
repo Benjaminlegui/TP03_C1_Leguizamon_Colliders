@@ -2,7 +2,8 @@ using UnityEngine;
 
 public class Movement : MonoBehaviour
 {
-    [SerializeField] private float movementSpeed = 10;
+    [SerializeField] private float movementSpeed = 5f;
+    public float MovementSpeed { get => movementSpeed; set => movementSpeed = value; }
     [SerializeField] private SpriteRenderer spriteRenderer;
     [SerializeField] private KeyCode movementUp = KeyCode.W;
     [SerializeField] private KeyCode movementDown = KeyCode.S;
