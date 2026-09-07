@@ -10,6 +10,7 @@ public class Player : MonoBehaviour
     [SerializeField] private SpriteRenderer sprite;
     [SerializeField] private Collider2D playerBodyCollider;
     [SerializeField] private Rigidbody2D body;
+    [SerializeField] private PlayerId playerId;
 
     [Header("Walls")] 
     [SerializeField] private Collider2D topWall;
@@ -36,6 +37,7 @@ public class Player : MonoBehaviour
 
         direction = (up ? 1f : 0f) - (down ? 1f : 0f);
         
+        ApplyColor();
         ScalePlayer();
     }
 
@@ -63,5 +65,12 @@ public class Player : MonoBehaviour
         Vector3 scale = transform.localScale;
         scale.y = settings.PlayerSize;
         transform.localScale = scale;
+    }
+    
+    private void ApplyColor()
+    {
+        sprite.color = playerId == PlayerId.Player1
+            ? settings.Player1Color
+            : settings.Player2Color;
     }
 }
