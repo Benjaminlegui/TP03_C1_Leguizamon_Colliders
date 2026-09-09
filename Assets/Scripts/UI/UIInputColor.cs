@@ -1,9 +1,9 @@
 using UnityEngine;
 using TMPro;
 
-public class ColorSelection : MonoBehaviour
+public class UIInputColor : MonoBehaviour
 {
-    [SerializeField] private GameSettings settings;
+    [SerializeField] private PlayerSettings settings;
     [SerializeField] private PlayerId playerId;
 
     private TMP_Dropdown dropdown;

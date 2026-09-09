@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-public class PlayBtn : MonoBehaviour
+public class UIPlayBtn : MonoBehaviour
 {
     private Button button;
     

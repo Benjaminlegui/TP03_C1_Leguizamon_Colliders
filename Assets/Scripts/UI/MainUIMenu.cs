@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class MainMenuUI : MenuUI
+public class MainUIMenu : UIMenu
 {
     void Start()
     {

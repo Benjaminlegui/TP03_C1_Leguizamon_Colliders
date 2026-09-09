@@ -4,7 +4,7 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     [Header("Game Settings SO")]
-    [SerializeField] private GameSettings settings;
+    [SerializeField] private PlayerSettings settings;
     
     [Header("Internal Components")]
     [SerializeField] private SpriteRenderer sprite;

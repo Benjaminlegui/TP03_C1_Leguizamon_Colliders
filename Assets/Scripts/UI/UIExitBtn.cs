@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-public class ExitBtn : MonoBehaviour
+public class UIExitBtn : MonoBehaviour
 {
     private Button button;
     void Awake()

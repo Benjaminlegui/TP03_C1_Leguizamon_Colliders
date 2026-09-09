@@ -3,9 +3,9 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
-public class SettingsUI : MonoBehaviour
+public class UISettings : MonoBehaviour
 {
-    [SerializeField] private GameSettings settings;
+    [SerializeField] private PlayerSettings settings;
     
     [Header("Speed Slider")]
     [SerializeField] private TMP_Text speedSliderText;
